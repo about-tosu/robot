@@ -16,7 +16,7 @@ BOT_TOKEN = getenv("BOT_TOKEN", None)
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 180))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 2000))
 
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", -1002023182491))
@@ -31,7 +31,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO", "https://github.com/Learningbots79/LB_Music",
+    "UPSTREAM_REPO", "https://t.me/about_tosuu",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -46,8 +46,8 @@ AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", bcfe26b0ebc3428882a0b5fb3e872473)
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", 907c6a054c214005aeae1fd752273cc4)
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
@@ -77,21 +77,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-STATS_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-STREAM_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+STREAM_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+YOUTUBE_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
 
 
 def time_to_seconds(time):
