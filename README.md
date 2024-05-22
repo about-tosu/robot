@@ -1,5 +1,5 @@
 <h2 align="center">
-    ──「 LB Music 」──
+    ──「 Nothing Bot's 」──
 </h2>
 
 <p align="center">
