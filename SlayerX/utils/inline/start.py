@@ -30,7 +30,8 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
         [
-           InlineKeyboardButton(text=_["S_B_7"], url=f"https://t.me/Cloning_music_Bot",
-        ]
+            InlineKeyboardButton(text=_["S_B_7"], url=f"https://t.me/Cloning_music_Bot"
+             )   
+         ], 
     ]
     return buttons
