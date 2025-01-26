@@ -31,7 +31,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO", "https://github.com/about-tosu/LB_Music",
+    "UPSTREAM_REPO", "https://github.com/about-tosu/robot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -77,21 +77,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/a89a03efc7f4bf077a4a6.jpg"
+    "START_IMG_URL", "https://files.catbox.moe/v4o71i.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/a89a03efc7f4bf077a4a6.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/9j2z1r.jpg"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-STREAM_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/cf9b17c2d78e1f58ff297.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/9j2z1r.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/9j2z1r.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/9j2z1r.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/9j2z1r.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/9j2z1r.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/9j2z1r.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/9j2z1r.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/9j2z1r.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/9j2z1r.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/9j2z1r.jpg"
 
 
 def time_to_seconds(time):
