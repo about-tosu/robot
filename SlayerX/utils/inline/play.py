@@ -70,13 +70,13 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="ᴜᴘᴅᴀᴛᴇs", url=config.SUPPORT_CHANNEL
+                text="ᴜᴘᴅᴀᴛᴇs 📢", url=config.SUPPORT_CHANNEL
             ),
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/HarryXRoBot?startgroup=admin"
+                text="ᴀᴅᴅ ᴍᴇ 🎵", url=f"https://t.me/HarryXRoBot?startgroup=admin"
             )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text="ᴄʟᴏsᴇ 🔕", url=f"t.me/cloning_Music_Bot")],
     ]
     return buttons
 
