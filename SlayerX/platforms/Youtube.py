@@ -12,7 +12,7 @@ from youtubesearchpython.__future__ import VideosSearch
 from SlayerX.utils.database import is_on_off
 from SlayerX.utils.formatters import time_to_seconds
 
-
+API_KEY = "Rf1qda5gyCITj6VbrekzRxmR"
 
 import os
 import glob
@@ -42,8 +42,8 @@ def extract_video_id(link: str) -> str:
             return match.group(1)
 
     raise ValueError("Invalid YouTube link provided.")
-def apii_dl(video_id: str) -> str:
-    api_url = f"http://178.128.31.229:8080/download/song/{video_id}"
+def api_dl(video_id: str) -> str:
+    api_url = f"https://api.vivekrajroy705.workers.dev/download/song/{video_id}?key={API_KEY}"
     file_path = os.path.join("downloads", f"{video_id}.mp3")
 
     # Check if file already exists
@@ -66,37 +66,6 @@ def apii_dl(video_id: str) -> str:
         return None
 
 
-import os
-import requests
-
-def api_dl(video_id: str) -> str:
-    api_url = f"http://178.128.31.229:8080/download/song/{video_id}"
-    file_path = os.path.join("downloads", f"{video_id}.mp3")
-
-    # Check if file already exists
-    if os.path.exists(file_path):
-        print(f"{file_path} already exists. Skipping download.")
-        return file_path
-
-    try:
-        # Stream download using context manager
-        with requests.get(api_url, stream=True) as response:
-            if response.status_code == 200:
-                os.makedirs("downloads", exist_ok=True)
-                with open(file_path, 'wb') as f:
-                    for chunk in response.iter_content(chunk_size=8192):
-                        f.write(chunk)
-                print(f"Downloaded {file_path}")
-                return file_path
-            else:
-                print(f"Failed to download {video_id}. Status: {response.status_code}")
-                return None
-    except requests.RequestException as e:
-        print(f"Error downloading {video_id}: {e}")
-        # Cleanup if download fails
-        if os.path.exists(file_path):
-            os.remove(file_path)
-        return None
 
 
 
@@ -381,8 +350,7 @@ class YouTubeAPI:
             try:
                 sexid = extract_video_id(link)
                 path = api_dl(sexid)
-                if path:
-                    return path
+                return path
             except:
                 print("api failed")
             ydl_optssx = {
